@@ -11152,3 +11152,24 @@ div #projet2{
 div #projet3{
   background-color: #D1B5F1;
 }
+
+/* Ajout Victor */
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.progress {
+  height: 20px;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  transition: width 0.6s ease;
+}
