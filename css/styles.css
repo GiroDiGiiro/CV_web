@@ -11173,3 +11173,14 @@ div #projet3{
 .progress-bar {
   transition: width 0.6s ease;
 }
+
+
+a.badge {
+  text-decoration: none; /* Supprime le soulignement des liens */
+  cursor: pointer; /* Ajoute un curseur de type "pointer" */
+  color: white; /* Assure la couleur du texte */
+}
+
+a.badge:hover {
+  opacity: 0.8; /* Légère opacité au survol pour un effet visuel */
+}
