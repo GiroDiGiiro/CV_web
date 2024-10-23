@@ -11141,6 +11141,8 @@ address a {
 
 }
 
+/* Ajout Victor */
+
 div #projet1{
   background-color: #EFB786;
 }
@@ -11152,8 +11154,6 @@ div #projet2{
 div #projet3{
   background-color: #D1B5F1;
 }
-
-/* Ajout Victor */
 
 .card {
   border-radius: 10px;
@@ -11183,4 +11183,20 @@ a.badge {
 
 a.badge:hover {
   opacity: 0.8; /* Légère opacité au survol pour un effet visuel */
+}
+
+/* Supprime le soulignement des liens */
+a {
+  text-decoration: none !important; 
+}
+
+/* Cible spécifiquement le h2 dans le lien */
+#Projets {
+  cursor: pointer; /* Ajoute un curseur de type "pointer" */
+  color: inherit; /* Assure que la couleur hérite de son parent */
+}
+
+#Projets:hover {
+  cursor: pointer; /* Ajoute un curseur de type "pointer" */
+  color: #007bff !important; /* Assure que la couleur hérite de son parent */
 }

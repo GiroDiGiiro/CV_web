@@ -1,0 +1,78 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 80px; /* Ajuste cette valeur selon la hauteur de ta navbar */
+}
+/* Pour les petits écrans, la navbar est plus haute */
+@media (max-width: 768px) {
+    body {
+        padding-top: 120px; /* Ajuste cette valeur si la navbar devient plus grande sur mobile */
+    }
+}
+.scientific-article {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.article-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.author {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: #2980b9;
+    margin-top: 30px;
+}
+
+p, ul {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+ul {
+    margin-top: 15px;
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.video-section {
+    text-align: center;
+}
+
+video {
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .article-title {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
