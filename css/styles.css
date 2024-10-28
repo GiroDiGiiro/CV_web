@@ -10887,6 +10887,11 @@ html {
   position: relative;
   top: -5px;
 }
+
+.divider-custom-icon i {
+  color: #000 !important; /* Définit également l'icône en noir */
+}
+
 .divider-custom.divider-light .divider-custom-line {
   background-color: #fff;
 }
@@ -10914,6 +10919,7 @@ html {
   padding-bottom: 1rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
+  height: 80px;
   
   
 }
@@ -10991,6 +10997,8 @@ html {
   position: relative;
   background: url('../assets/img/topo1.jpg') ;
   background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
 }
 .masthead .masthead-heading {
@@ -11000,6 +11008,7 @@ html {
   
 }
 .masthead .masthead-subheading {
+  color: #000;
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
@@ -11199,4 +11208,14 @@ a {
 #Projets:hover {
   cursor: pointer; /* Ajoute un curseur de type "pointer" */
   color: #007bff !important; /* Assure que la couleur hérite de son parent */
+}
+
+#masthead-heading-name{
+  color: #000;
+  font-weight: 500;
+}
+
+#masthead-subheading-attribute {
+  color: #000;
+  font-weight: 500;
 }
