@@ -11219,3 +11219,36 @@ a {
   color: #000;
   font-weight: 500;
 }
+
+#mainNav .navbar-nav {
+  display: flex;
+  flex-direction: row; /* Aligne les éléments horizontalement */
+}
+#mainNav .nav-link {
+  padding: 10px; /* Ajuste l'espacement autour des liens */
+}
+
+li .nav-item{
+  padding-left: 10px;
+}
+@media (min-width: 400px) and (max-width: 991px) {
+  #navbarResponsive .nav-item {
+      padding: 0 10px; /* Ajoute un padding horizontal de 10px à chaque élément */
+
+  }
+  #navbarResponsive .nav-link {
+      padding: 10px 0; /* Ajuste le padding vertical des liens pour les espacer un peu plus */
+  }
+}
+
+@media (max-width: 991px) {
+  #aboutLink {
+      display: block;
+      padding: 10px 15px;
+      color: #fff;
+      text-decoration: none;
+  }
+  #aboutLink:hover {
+      color: #ddd;
+  }
+}

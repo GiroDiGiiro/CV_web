@@ -51,4 +51,28 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    function handleResize() {
+        const dropdown = document.querySelector('.nav-item.dropdown');
+        const navLink = document.querySelector('#navbarDropdownMenuLink');
+        const isMobileOrTablet = window.innerWidth < 992;
+    
+        if (isMobileOrTablet && !document.querySelector('#aboutLink')) {
+            // Remplacer le dropdown par un lien simple
+            const aboutLink = document.createElement('a');
+            aboutLink.href = "#diplome";
+            aboutLink.classList.add('nav-link', 'py-3', 'px-0', 'px-lg-3', 'rounded');
+            aboutLink.id = 'aboutLink';
+            aboutLink.textContent = "A propos";
+            
+            dropdown.replaceChild(aboutLink, navLink);
+        } else if (!isTablet && document.querySelector('#aboutLink')) {
+            // Restaurer le dropdown menu en mode desktop
+            dropdown.replaceChild(navLink, document.querySelector('#aboutLink'));
+        }
+    }
+    
+    // Applique la fonction au chargement de la page et lors du redimensionnement
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('DOMContentLoaded', handleResize);
+
 });
